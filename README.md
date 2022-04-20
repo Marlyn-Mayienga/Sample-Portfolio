@@ -1,56 +1,43 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# My_Portfolio
 
-> Description the project.
+> My Portfolio project is a project that details my work as a software engineer. It also has information about me and how to reach me on social media platforms.
 
 
 ## Built With
 
-- Major languages
+- HTML, CSS
 - Frameworks
 - Technologies used
 
-## Live Demo (if available)
-
-[Live Demo Link](https://livedemo.com)
 
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
+You need to have a code editor to be able to run the commands in the terminal. VSCode is most preferred
 
 ### Setup
+You need to download the linters folder and copy it to your project
 
 ### Install
+Install the linters folder to your project.
+Install the fontawesome for icons in the project (Preferrable)
 
 ### Usage
 
 ### Run tests
 
-### Deployment
-
-
-
 ## Authors
 
-👤 **Author1**
+👤 **MARLYN MAYIENGA**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@Marlyn_Mayienga](https://github.com/Marlyn_Mayienga)
+- Twitter: [@Merl_Mayienga](https://twitter.com/M_ayienga)
+- LinkedIn: [Marlyn_Mayienga](https://www.linkedin.com/in/marlyn-mayienga/)
 
 ## 🤝 Contributing
 
