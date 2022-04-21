@@ -50,7 +50,7 @@ body {
   size: 10px;
 }
 
-h1 {
+.dev-tag {
   font-family: Roboto, Arial, sans-serif;
   font-size: 40px;
   font-weight: 500;
