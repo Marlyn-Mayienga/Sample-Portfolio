@@ -66,6 +66,7 @@ body {
   line-height: 32px;
   letter-spacing: 0;
   text-align: center;
+  padding: 10px 15px;
 }
 
 .divider {
@@ -84,6 +85,8 @@ body {
   line-height: 15px;
   letter-spacing: 0;
   text-align: center;
+  color: white;
+  padding-top: 20px;
 }
 
 .content {
