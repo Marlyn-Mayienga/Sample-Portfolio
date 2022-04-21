@@ -3,6 +3,7 @@ main {
   position: relative;
   overflow: hidden;
   width: 100%;
+  align-items: center;
 }
 
 .container-header {
@@ -67,13 +68,13 @@ h1 {
   text-align: center;
 }
 
-hr {
-  border: 1px solid #646369;
-  height: 9px;
+.divider {
+  height: 1px;
   width: 448px;
+  margin: 10px auto;
   justify-content: center;
   top: 9px;
-  color: #646369;
+  background: #646369;
 }
 
 .logo-title {
@@ -96,6 +97,13 @@ hr {
 .technologies {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 500px) {
+  .technologies {
+    justify-content: flex-start;
+  }
 }
 
 .technologies-item {
@@ -123,6 +131,17 @@ hr {
   justify-content: center;
 }
 
+@media only screen and (max-width: 500px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer > :first-child {
+    display: none;
+  }
+}
+
 .social-links {
   display: flex;
   flex-direction: row;
@@ -136,18 +155,37 @@ hr {
 
 .first-img {
   height: 184px;
-  width: 184px;
+  width: 400px;
   left: 69px;
   top: 100px;
   position: absolute;
 }
 
+@media only screen and (max-width: 500px) {
+  .first-img {
+    left: 0;
+    top: 275px;
+    margin-left: -200px;
+  }
+}
+
 .second-img {
-  height: 226px;
-  width: 226px;
+  height: 180px;
+  width: 180px;
   right: 226px;
-  bottom: 200px;
+  bottom: 40px;
   position: absolute;
+}
+
+@media only screen and (max-width: 500px) {
+  .second-img {
+    height: 206px;
+    width: 206px;
+    right: 0;
+    margin-right: -103px;
+    bottom: -90px;
+    position: absolute;
+  }
 }
 
 .hamburger-btn {
@@ -162,21 +200,6 @@ hr {
   .hamburger-btn {
     color: white;
     display: block;
-  }
-
-  .first-img {
-    height: 154px;
-    width: 154px;
-    left: -75px;
-    top: 100px;
-    position: absolute;
-  }
-
-  .second-img {
-    height: 206px;
-    width: 206px;
-    right: -100px;
-    bottom: 200px;
-    position: absolute;
+    font-size: 2em;
   }
 }
