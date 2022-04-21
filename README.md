@@ -10,6 +10,8 @@
 - HTML, CSS
 
 
+
+
 ## Getting Started
 
 
@@ -23,6 +25,20 @@ You need to download the linters folder and copy it to your project.
 
 ### Install
 You need to install the linters and the fontawesome library. (Preferred)
+
+To get a local copy up and running follow these simple example steps.
+
+### Prerequisites
+You need to have a code editor to be able to run the commands in the terminal. VSCode is most preferred
+
+### Setup
+You need to download the linters folder and copy it to your project
+
+### Install
+Install the linters folder to your project.
+Install the fontawesome for icons in the project (Preferrable)
+
+
 ### Usage
 
 ### Run tests
@@ -37,6 +53,8 @@ You need to install the linters and the fontawesome library. (Preferred)
 - GitHub: [@Marlyn_Mayienga](https://github.com/Marlyn_Mayienga)
 - Twitter: [@Merl_Mayienga](https://twitter.com/Merl_Mayienga)
 - LinkedIn: [Marlyn_Mayienga](https://linkedin.com/in/Marlyn_Mayienga)
+
+
 
 ## 🤝 Contributing
 
