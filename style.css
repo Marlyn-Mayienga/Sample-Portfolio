@@ -99,8 +99,6 @@ body {
   max-width: 1080px;
   margin: 0 auto;
   padding: 2rem;
-
-  /* background-image: url("Ellipse.svg"); */
 }
 
 /**
@@ -207,25 +205,17 @@ h3 {
 .work-item.one {
   background-image: url("/Ellipse.svg");
   background-repeat: no-repeat;
-
-  /* background-size: cover; */
-
-  /* background-position: bottom center, 50%, 50%; */
 }
 
 .work-item.two {
   background-image: url("/Ellipse_20.svg");
   background-repeat: no-repeat;
-
-  /* background-size: contain; */
   background-position: right 10%;
 }
 
 .work-item.three {
   background-image: url("/Ellipse_21.svg");
   background-repeat: no-repeat;
-
-  /* background-size: cover; */
   background-position: bottom left, 50%, 50%;
 }
 
@@ -344,10 +334,6 @@ h3 {
 
 .skillset {
   display: flex;
-
-  /* align-items: stretch; Default */
-
-  /* justify-content: space-between; */
   width: 100%;
   margin: 0;
   padding: 0;
@@ -378,8 +364,6 @@ h5 {
 
 #names {
   display: grid; /* 2. display flex to the rescue */
-
-  /* margin-right: auto; */
   grid-template-columns: repeat(2, 1fr);
   column-gap: 1rem;
   width: 100%;
@@ -470,8 +454,6 @@ h5 {
   .first-line {
     width: 80%;
     margin: 2% auto;
-
-    /* background-color: ; */
   }
 
   .first-img {
@@ -491,8 +473,6 @@ h5 {
 
   .shadow-img {
     height: 482.56502282287016px;
-
-    /* width: 39.607031943946666px; */
     left: -110.0361328125px;
     top: 1624.7070922851562px;
     border-radius: 0;
