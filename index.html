@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My_Developer Portfolio</title>
     <link
       rel="stylesheet"
@@ -10,8 +10,8 @@
       integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
       crossorigin="anonymous"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,400&display=swap"
       rel="stylesheet"
@@ -23,7 +23,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
@@ -48,7 +48,7 @@
 
     <section class="content">
       <h1 class="name">Marlyn Mayienga</h1>
-      <img class="first-img" src="./circle_header.svg" alt="circle 2 header"/>
+      <img class="first-img" src="./circle_header.svg" alt="circle 2 header" />
       <h2 class="dev-tag">Software Developer</h2>
       <p class="first-paragraph">
         I can help you build a product, feature or website. Look through some of
@@ -60,7 +60,7 @@
       <!-- TECHNLOGIES -->
       <section class="technologies">
         <div class="technologies-item">
-          <h2 class="technologies-title">Languages</h2>
+          <div class="technologies-title">Languages</div>
           <ul>
             <li>JavaScript</li>
             <li>Ruby</li>
@@ -86,14 +86,14 @@
             <ul>
               <li>Codekit</li>
               <li>GitHub</li>
-              <li>CodePEn</li>
+              <li>CodePen</li>
               <li>GitLab</li>
               <li>Terminal</li>
             </ul>
           </div>
         </div>
       </section>
-      <img class="second-img" src="./circle_header.svg" alt="circle 2 header"/>
+      <img class="second-img" src="./circle_header.svg" alt="circle 2 header" />
       <div class="divider"></div>
 
       <!-- PAGE BREAK -->
@@ -102,19 +102,33 @@
           <p>Work &darr;</p>
         </div>
         <div class="social-links">
-          <a href="https://github.com/Marlyn_Mayienga"
-            ><i class="fab fa-github"></i
-          ></a>
-          <a href="https://www.linkedin.com/in/marlyn-mayienga/"
-            ><i class="fab fa-linkedin"></i
-          ></a>
-          <a href="https://www.instagram.com/merl.__/?hl=en"
-            ><i class="fas fa-cat"></i
-          ></a>
-          <a href="https://twitter.com/M_ayienga"
-            ><i class="fab fa-twitter"></i
-          ></a>
-          <a href="marlymayienga@gmail.com"><i class="fas fa-envelope"></i></a>
+          <ul>
+            <li>
+              <a href="https://github.com/Marlyn_Mayienga"
+                ><i class="fab fa-github"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/marlyn-mayienga/"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/merl.__/?hl=en"
+                ><i class="fas fa-cat"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/M_ayienga"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </li>
+            <li>
+              <a href="marlymayienga@gmail.com"
+                ><i class="fas fa-envelope"></i
+              ></a>
+            </li>
+          </ul>
         </div>
         <div>
           <p>&darr; Work</p>
@@ -124,10 +138,36 @@
         <h3>My Recent Work</h3>
         <div class="divider-full"></div>
         <div class="works">
-          <div class="work-item">
-            <img class="work-img" src="./project.jpg" alt="project image"/>
-            <!-- <img class="shadow-img" src="./Ellipse 19.svg" alt="project image"/> -->
-            <img class="shadow-img" src="./Ellipse.svg" alt="project image"/>
+          <div class="work-item one">
+            <img class="work-img" src="./project.jpg" alt="project image" />
+            <!-- <img class="shadow-img" src="./Ellipse.svg" alt="project image"/> -->
+            <!-- <p class="shadow image"></p> -->
+            <div class="work-content">
+              <h4 class="work-item-title">Multi-Post Stories</h4>
+              <p class="project-section">
+                A daily selection of privately personalized reads; no accounts
+                or sign-ups required. has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a
+                standard dummy text.
+              </p>
+              <ul class="skillset">
+                <li>css</li>
+                <li>html</li>
+                <li>bootstrap</li>
+                <li>Ruby</li>
+              </ul>
+              <div class="work-item-actions">
+                <button
+                  class="button button-primary"
+                  onclick="document.getElementById('id1').style.display='block'"
+                >
+                  See Project
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="work-item work-item-reverse two">
+            <img class="work-img" src="./project.jpg" alt="project image" />
             <div class="work-content">
               <h4 class="work-item-title">Multi-Post Stories</h4>
               <p class="project-section">
@@ -147,8 +187,8 @@
               </div>
             </div>
           </div>
-          <div class="work-item work-item-reverse">
-            <img class="work-img" src="./project.jpg" alt="project image"/>
+          <div class="work-item three">
+            <img class="work-img" src="./project.jpg" alt="project image" />
             <div class="work-content">
               <h4 class="work-item-title">Multi-Post Stories</h4>
               <p class="project-section">
@@ -168,29 +208,8 @@
               </div>
             </div>
           </div>
-          <div class="work-item">
-            <img class="work-img" src="./project.jpg" alt="project image"/>
-            <div class="work-content">
-              <h4 class="work-item-title">Multi-Post Stories</h4>
-              <p class="project-section">
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required. has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a
-                standard dummy text.
-              </p>
-              <ul class="skillset">
-                <li>css</li>
-                <li>html</li>
-                <li>bootstrap</li>
-                <li>Ruby</li>
-              </ul>
-              <div class="work-item-actions">
-                <button class="button button-primary">See Project</button>
-              </div>
-            </div>
-          </div>
-          <div class="work-item work-item-reverse">
-            <img class="work-img" src="./project.jpg" alt="project image"/>
+          <div class="work-item work-item-reverse four">
+            <img class="work-img" src="./project.jpg" alt="project image" />
             <div class="work-content">
               <h4 class="work-item-title">Multi-Post Stories</h4>
               <p class="project-section">
@@ -211,16 +230,19 @@
             </div>
           </div>
         </div>
+        <!-- <div class="divider"></div> -->
+        <div class="divider-full"></div>
       </section>
       <section class="contact">
-        <p class="contact-title">Let's chat!</p>
+        <p class="contact-title desktop">Let's chat!</p>
+        <p class="contact-title mobile">CONTACT US</p>
         <p class="contact-description">
           If you have an application you are interested in developing, a feature
           that you need built or a project that needs coding. I’d love to help
           with it
         </p>
         <form class="contact-form">
-        <input
+          <input
             type="text"
             id="fullname"
             name="fullname"
@@ -252,29 +274,81 @@
           >
           <button type="submit" class="send-button">Send</button>
         </form>
-  
       </section>
 
       <footer class="second-footer">
-        <a href="https://github.com/Marlyn_Mayienga"
-          ><i class="fab fa-github"></i
-        ></a>
-        <a href="https://www.linkedin.com/in/marlyn-mayienga/"
-          ><i class="fab fa-linkedin"></i
-        ></a>
-        <a href="https://www.instagram.com/merl.__/?hl=en"
-          ><i class="fas fa-cat"></i
-        ></a>
-        <a href="https://twitter.com/M_ayienga"
-          ><i class="fab fa-twitter"></i
-        ></a>
-        <a href="marlymayienga@gmail.com"><i class="fas fa-envelope"></i></a>
-        <a href="marlymayienga@gmail.com">marlymayienga@gmail.com</a>
+        <ul>
+          <li>
+            <a href="https://github.com/Marlyn_Mayienga"
+              ><i class="fab fa-github"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/marlyn-mayienga/"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/merl.__/?hl=en"
+              ><i class="fas fa-cat"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/M_ayienga"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </li>
+          <li>
+            <a href="marlymayienga@gmail.com"
+              ><i class="fas fa-envelope"></i
+            ></a>
+          </li>
+          <li><a href="marlymayienga@gmail.com">marlymayienga@gmail.com</a></li>
+        </ul>
       </footer>
     </section>
 
     <!-- <div class="modal-template">
 
     </div> -->
+    <div id="id1" class="modal">
+      <div class="modal-content">
+        <span
+        onclick="document.getElementById('id1').style.display='none'"
+        class="button"
+        >&times;</span
+      >
+        <div class="modal-container">
+          <img class="work-img" src="./project.jpg" alt="project image" />
+            <div class="work-content">
+              <h4 class="work-item-title">Multi-Post Stories</h4>
+              <p class="project-section">
+                A daily selection of privately personalized reads; no accounts
+                or sign-ups required. has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a
+                standard dummy text.
+              </p>
+              <ul class="skillset">
+                <li>css</li>
+                <li>html</li>
+                <li>bootstrap</li>
+                <li>Ruby</li>
+              </ul>
+              <div class="work-item-actions">
+                <button class="button button-primary">See Live <span><i class="fas fa-location-arrow"></i></span></button>
+                <button class="button button-primary">See Source <span><i class="fab fa-github"></i></span></button>
+              </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
+
   </body>
 </html>

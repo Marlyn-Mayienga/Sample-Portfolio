@@ -1,4 +1,3 @@
-
 main {
   position: relative;
   overflow: hidden;
@@ -79,14 +78,9 @@ body {
 }
 
 .divider-full {
-  /* display: flex; */
   height: 1px;
   width: 100%;
   margin: 10px auto;
-
-  /* justify-content: center; */
-
-  /* top: 9px; */
   background: #646369;
 }
 
@@ -105,6 +99,8 @@ body {
   max-width: 1080px;
   margin: 0 auto;
   padding: 2rem;
+
+  /* background-image: url("Ellipse.svg"); */
 }
 
 /**
@@ -114,12 +110,6 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-}
-
-@media only screen and (max-width: 500px) {
-  .technologies {
-    justify-content: flex-start;
-  }
 }
 
 .technologies-item {
@@ -138,14 +128,19 @@ body {
   margin-top: 10px;
 }
 
+.social-links ul {
+  list-style: none;
+  flex-direction: row;
+  display: flex;
+}
+
 .skillset li {
   display: block;
   flex: 0 2 auto; /* Default */
   list-style-type: none;
-
-  /* flex: 1; */
+  width: 25%;
   text-align: center;
-  border-right: 2px solid white;
+  border-right: 1px solid #555;
 }
 
 .technologies-item ul li {
@@ -156,17 +151,6 @@ body {
   margin-top: 25px;
   display: flex;
   justify-content: space-around;
-}
-
-@media only screen and (max-width: 500px) {
-  .page-break {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .page-break > :first-child {
-    display: none;
-  }
 }
 
 .social-links {
@@ -188,14 +172,6 @@ body {
   position: absolute;
 }
 
-@media only screen and (max-width: 500px) {
-  .first-img {
-    left: 0;
-    top: 275px;
-    margin-left: -200px;
-  }
-}
-
 .second-img {
   height: 180px;
   width: 180px;
@@ -204,43 +180,8 @@ body {
   position: absolute;
 }
 
-@media only screen and (max-width: 500px) {
-  .second-img {
-    height: 206px;
-    width: 206px;
-    right: 0;
-    margin-right: -103px;
-    bottom: -90px;
-    position: absolute;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .shadow-img {
-    height: 482.56502282287016px;
-
-    /* width: 39.607031943946666px; */
-    left: -110.0361328125px;
-    top: 1624.7070922851562px;
-    border-radius: 0;
-    position: absolute;
-  }
-}
-
 .hamburger-btn {
   display: none;
-}
-
-@media only screen and (max-width: 500px) {
-  .nav-bar {
-    display: none;
-  }
-
-  .hamburger-btn {
-    color: white;
-    display: block;
-    font-size: 2em;
-  }
 }
 
 h3 {
@@ -263,22 +204,40 @@ h3 {
   justify-content: space-between;
 }
 
-.work-item-reverse {
-  /* display:flex; */
+.work-item.one {
+  background-image: url("/Ellipse.svg");
+  background-repeat: no-repeat;
 
-  /* justify-content:space-between; */
-  flex-direction: row-reverse;
+  /* background-size: cover; */
+
+  /* background-position: bottom center, 50%, 50%; */
 }
 
-@media only screen and (max-width: 500px) {
-  .work-item {
-    flex-direction: column;
-    flex: 1;
-  }
+.work-item.two {
+  background-image: url("/Ellipse_20.svg");
+  background-repeat: no-repeat;
 
-  .work-content {
-    flex: 1;
-  }
+  /* background-size: contain; */
+  background-position: right 10%;
+}
+
+.work-item.three {
+  background-image: url("/Ellipse_21.svg");
+  background-repeat: no-repeat;
+
+  /* background-size: cover; */
+  background-position: bottom left, 50%, 50%;
+}
+
+.work-item.four {
+  background-image: url("/Ellipse_22.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom right, 50%, 50%;
+}
+
+.work-item-reverse {
+  flex-direction: row-reverse;
 }
 
 .work-content {
@@ -319,7 +278,7 @@ h3 {
 
 .button {
   height: 40px;
-  width: 105px;
+  width: 140px;
   margin-top: auto;
   border: none;
   color: white;
@@ -350,15 +309,17 @@ h3 {
   width: 60%;
 }
 
-@media only screen and (max-width: 500px) {
-  .contact {
-    width: 100%;
-  }
-}
-
 .contact-title {
   color: #9390ff;
   font-size: 24px;
+}
+
+.contact-title.desktop {
+  display: block;
+}
+
+.contact-title.mobile {
+  display: none;
 }
 
 .contact-desription {
@@ -383,8 +344,10 @@ h3 {
 
 .skillset {
   display: flex;
-  align-items: stretch; /* Default */
-  justify-content: space-between;
+
+  /* align-items: stretch; Default */
+
+  /* justify-content: space-between; */
   width: 100%;
   margin: 0;
   padding: 0;
@@ -426,17 +389,6 @@ h5 {
   display: none;
 }
 
-@media only screen and (max-width: 500px) {
-  #names {
-    flex-direction: column;
-    display: none;
-  }
-
-  #fullname {
-    display: block;
-  }
-}
-
 .send-button {
   height: 40px;
   width: 105px;
@@ -446,12 +398,121 @@ h5 {
   color: white;
 }
 
-.second-footer {
+.second-footer ul {
   display: flex;
   justify-content: center;
   flex-direction: row;
-
-  /* margin: 20px 60px; */
+  list-style: none;
   column-gap: 1rem;
   color: white;
+}
+
+.modal {
+  z-index: 3;
+  display: none;
+  padding-top: 50px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  color: black;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  margin: auto;
+  background-color: #9390ff;
+  position: relative;
+  padding: 0;
+  outline: 0;
+  width: 800px;
+}
+
+.modal-container {
+  max-height: 80vh;
+  overflow-y: scroll;
+  padding: 20px 20px;
+}
+
+@media only screen and (max-width: 770px) {
+  .nav-bar {
+    display: none;
+  }
+
+  .hamburger-btn {
+    color: white;
+    display: block;
+    font-size: 2em;
+  }
+
+  .technologies {
+    justify-content: flex-start;
+  }
+
+  .page-break {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .page-break > :first-child {
+    display: none;
+  }
+
+  .first-img {
+    left: 0;
+    top: 275px;
+    margin-left: -200px;
+  }
+
+  .second-img {
+    height: 206px;
+    width: 206px;
+    right: 0;
+    margin-right: -103px;
+    bottom: -90px;
+    position: absolute;
+  }
+
+  .shadow-img {
+    height: 482.56502282287016px;
+
+    /* width: 39.607031943946666px; */
+    left: -110.0361328125px;
+    top: 1624.7070922851562px;
+    border-radius: 0;
+    position: absolute;
+  }
+
+  .work-item {
+    flex-direction: column;
+    flex: 1;
+  }
+
+  .work-content {
+    flex: 1;
+  }
+
+  .contact {
+    width: 100%;
+  }
+
+  .contact-title.desktop {
+    display: none;
+  }
+
+  .contact-title.mobile {
+    display: block;
+  }
+
+  #names {
+    flex-direction: column;
+    display: none;
+  }
+
+  #fullname {
+    display: block;
+  }
 }
