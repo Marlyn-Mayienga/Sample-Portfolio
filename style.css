@@ -68,13 +68,13 @@ body {
   padding: 10px 15px;
 }
 
-.divider {
-  height: 1px;
+.first-line {
   width: 448px;
-  margin: 10px auto;
-  justify-content: center;
-  top: 9px;
-  background: #646369;
+  border: 1px solid #646369;
+}
+
+.second-line{
+  border: 1px solid #646369;
 }
 
 .divider-full {
@@ -465,6 +465,13 @@ h5 {
 
   .page-break > :first-child {
     display: none;
+  }
+
+  .first-line{
+    width: 80%;
+    margin: 2% auto;
+    /* background-color: ; */
+    
   }
 
   .first-img {
