@@ -73,7 +73,7 @@ body {
   border: 1px solid #646369;
 }
 
-.second-line{
+.second-line {
   border: 1px solid #646369;
 }
 
@@ -467,11 +467,11 @@ h5 {
     display: none;
   }
 
-  .first-line{
+  .first-line {
     width: 80%;
     margin: 2% auto;
+
     /* background-color: ; */
-    
   }
 
   .first-img {
