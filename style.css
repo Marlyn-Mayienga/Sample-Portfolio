@@ -448,6 +448,13 @@ h5 {
     font-size: 2em;
   }
 
+  .content{
+    background: url("/circle_header.svg") no-repeat;
+    background-position: 150% 10%;
+    background-size: 200px;
+
+
+  }
   .technologies {
     justify-content: flex-start;
   }
