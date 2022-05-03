@@ -407,6 +407,10 @@ h5 {
   color: white;
 }
 
+.second-footer a {
+  color: white;
+}
+
 .modal {
   z-index: 3;
   display: none;
@@ -442,9 +446,9 @@ input {
   padding: 20px 20px;
 }
 
-textarea[placeholder] {
+/* placeholder {
   color: black;
-}
+} */
 
 @media only screen and (max-width: 770px) {
   .nav-bar {
@@ -532,5 +536,22 @@ textarea[placeholder] {
 
   #fullname {
     display: block;
+  }
+
+  .second-footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+  }
+
+  .email-tag {
+    justify-content: center;
+    color: white;
+    align-self: center;
+  }
+
+  .email-tag a {
+    color: white;
   }
 }

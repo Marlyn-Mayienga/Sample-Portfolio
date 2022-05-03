@@ -273,7 +273,7 @@
             placeholder="Email Address"
             required
           />
-          <textarea
+          <!-- <textarea
             placeholder="Write your message here..."
             rows="5"
             cols="50"
@@ -281,16 +281,28 @@
             maxlength="500"
             required
           >
-          </textarea>
+          </textarea> -->
+
+          <textarea
+            id="msg"
+            name="user_message"
+            placeholder="Your message"
+            rows="5"
+            cols="50"
+            required
+            minlength="1"
+            maxlength="500"
+          ></textarea>
+
           <button type="submit" class="send-button">Send</button>
         </form>
       </section>
-
+      <div class="divider-full"></div>
       <footer class="second-footer">
         <ul>
           <li>
             <a href="https://github.com/Marlyn_Mayienga"
-              ><i class="fab fa-github"></i
+              ><i class="fab fa-github social-icon"></i
             ></a>
           </li>
           <li>
@@ -313,8 +325,10 @@
               ><i class="fas fa-envelope"></i
             ></a>
           </li>
-          <li><a href="marlymayienga@gmail.com">marlymayienga@gmail.com</a></li>
         </ul>
+        <div class="email-tag">
+          <a href="marlymayienga@gmail.com">marlymayienga@gmail.com</a>
+        </div>
       </footer>
     </section>
 
