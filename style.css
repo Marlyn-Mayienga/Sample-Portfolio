@@ -301,7 +301,8 @@ h3 {
 
 .contact-title {
   color: #9390ff;
-  font-size: 24px;
+
+  /* font-size: 24px; */
 }
 
 .contact-title.desktop {
@@ -314,11 +315,17 @@ h3 {
 
 .contact-desription {
   text-align: center;
+  padding: 10px 15px;
+  line-height: 24px;
+  line-height: 124%;
+  display: flex;
+  justify-content: center;
   margin: 10px 0;
 }
 
 .contact-form {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   grid-template-columns: 1fr;
   row-gap: 1rem;
   width: 100%;
@@ -346,11 +353,12 @@ h3 {
 h5 {
   color: #9390ff;
   font-family: Roboto, Arial, sans-serif;
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 24px;
+  font-size: 44px;
+  font-weight: 500;
+  line-height: 44px;
   letter-spacing: 0;
   text-align: center;
+  margin-bottom: 2px;
 }
 
 .about-me {
@@ -380,6 +388,16 @@ h5 {
   border: none;
   background: #9390ff;
   color: white;
+  align-self: center;
+}
+
+.send-button:hover {
+  height: 40px;
+  width: 105px;
+  margin-top: auto;
+  border: none;
+  background: black;
+  color: white;
 }
 
 .second-footer ul {
@@ -389,6 +407,20 @@ h5 {
   list-style: none;
   column-gap: 1rem;
   color: white;
+}
+
+.second-footer a {
+  color: white;
+  font-size: 25px;
+}
+
+h6 {
+  font-weight: 300;
+  font-size: 24px;
+  margin-top: 20px;
+  line-height: 24px;
+  align-items: center;
+  letter-spacing: 0;
 }
 
 .modal {
@@ -404,6 +436,11 @@ h5 {
   color: black;
   background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.4);
+}
+
+input {
+  overflow: visible;
+  height: 50px;
 }
 
 .modal-content {
@@ -507,5 +544,22 @@ h5 {
 
   #fullname {
     display: block;
+  }
+
+  .second-footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+  }
+
+  .email-tag {
+    justify-content: center;
+    color: white;
+    align-self: center;
+  }
+
+  .email-tag a {
+    color: white;
   }
 }

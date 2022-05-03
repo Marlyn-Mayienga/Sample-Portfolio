@@ -48,14 +48,14 @@
 
     <section class="content">
       <h1 class="name">Marlyn Mayienga</h1>
-      <img class="first-img" src="./circle_header.svg" alt="circle 2 header"/>
+      <img class="first-img" src="./circle_header.svg" alt="circle 2 header" />
       <h2 class="dev-tag">Software Developer</h2>
       <p class="first-paragraph">
         I can help you build a product, feature or website. Look through some of
         my work and experience! If you like what you see and have a project you
         need coded, don’t hestiate to contact me.
       </p>
-      <hr class="first-line">
+      <hr class="first-line" />
       <!-- TECHNLOGIES -->
       <section class="technologies">
         <div class="technologies-item">
@@ -92,7 +92,7 @@
           </div>
         </div>
       </section>
-      <hr class="first-line">
+      <hr class="first-line" />
 
       <!-- PAGE BREAK -->
       <section class="page-break">
@@ -134,7 +134,7 @@
       </section>
       <section class="my-recent-work">
         <h3>My Recent Work</h3>
-        <hr class="second-line">
+        <hr class="second-line" />
         <div class="works">
           <div class="work-item one">
             <img class="work-img" src="./project.jpg" alt="project image" />
@@ -230,18 +230,24 @@
       </section>
       <section class="contact">
         <p class="contact-title desktop">Let's chat!</p>
-        <p class="contact-title mobile">CONTACT US</p>
-        <p class="contact-description">
+        <h5 class="contact-title mobile">CONTACT US</h5>
+        <h6 class="contact-description">
           If you have an application you are interested in developing, a feature
           that you need built or a project that needs coding. I’d love to help
           with it
-        </p>
-        <form class="contact-form">
+        </h6>
+        <form
+          class="contact-form"
+          action="https://formspree.io/f/xvolvllr"
+          method="POST"
+        >
           <input
             type="text"
             id="fullname"
             name="fullname"
             placeholder="Enter Full Name"
+            maxlength="30"
+            required
           />
           <div id="names">
             <input
@@ -249,43 +255,56 @@
               id="fname"
               name="firstname"
               placeholder="Enter First Name"
+              maxlength="30"
+              required
             />
             <input
               type="text"
               id="lname"
               name="lastname"
               placeholder="Last Name"
+              maxlength="30"
+              required
             />
           </div>
           <input
-            type="text"
+            type="email"
             id="email"
             name="Email"
             placeholder="Email Address"
+            required
           />
-          <textarea rows="5" cols="50" name="description">
-          Write your message here
-      </textarea
-          >
+
+          <textarea
+            id="msg"
+            name="user_message"
+            placeholder="Your message"
+            rows="10"
+            cols="50"
+            required
+            minlength="1"
+            maxlength="500"
+          ></textarea>
+
           <button type="submit" class="send-button">Send</button>
         </form>
       </section>
-
+      <div class="divider-full"></div>
       <footer class="second-footer">
         <ul>
           <li>
             <a href="https://github.com/Marlyn_Mayienga"
-              ><i class="fab fa-github"></i
+              ><i class="fab fa-github social-icon"></i
             ></a>
           </li>
           <li>
             <a href="https://www.linkedin.com/in/marlyn-mayienga/"
-              ><i class="fab fa-linkedin"></i
+              ><i class="fab fa-linkedin-in social-icon"></i
             ></a>
           </li>
           <li>
             <a href="https://www.instagram.com/merl.__/?hl=en"
-              ><i class="fas fa-cat"></i
+              ><i class="fab fa-angellist"></i
             ></a>
           </li>
           <li>
@@ -298,8 +317,10 @@
               ><i class="fas fa-envelope"></i
             ></a>
           </li>
-          <li><a href="marlymayienga@gmail.com">marlymayienga@gmail.com</a></li>
         </ul>
+        <div class="email-tag">
+          <a href="marlymayienga@gmail.com">marlymayienga@gmail.com</a>
+        </div>
       </footer>
     </section>
 
@@ -309,33 +330,37 @@
     <div id="id1" class="modal">
       <div class="modal-content">
         <span
-        onclick="document.getElementById('id1').style.display='none'"
-        class="button"
-        >&times;</span
-      >
+          onclick="document.getElementById('id1').style.display='none'"
+          class="button"
+          >&times;</span
+        >
         <div class="modal-container">
           <img class="work-img" src="./project.jpg" alt="project image" />
-            <div class="work-content">
-              <h4 class="work-item-title">Multi-Post Stories</h4>
-              <p class="project-section">
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required. has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a
-                standard dummy text.
-              </p>
-              <ul class="skillset">
-                <li>css</li>
-                <li>html</li>
-                <li>bootstrap</li>
-                <li>Ruby</li>
-              </ul>
-              <div class="work-item-actions">
-                <button class="button button-primary">See Live <span><i class="fas fa-location-arrow"></i></span></button>
-                <button class="button button-primary">See Source <span><i class="fab fa-github"></i></span></button>
-              </div>
+          <div class="work-content">
+            <h4 class="work-item-title">Multi-Post Stories</h4>
+            <p class="project-section">
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required. has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a standard
+              dummy text.
+            </p>
+            <ul class="skillset">
+              <li>css</li>
+              <li>html</li>
+              <li>bootstrap</li>
+              <li>Ruby</li>
+            </ul>
+            <div class="work-item-actions">
+              <button class="button button-primary">
+                See Live <span><i class="fas fa-location-arrow"></i></span>
+              </button>
+              <button class="button button-primary">
+                See Source <span><i class="fab fa-github"></i></span>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
     </div>
 
     <script
@@ -343,7 +368,5 @@
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
     ></script>
-
-
   </body>
 </html>
