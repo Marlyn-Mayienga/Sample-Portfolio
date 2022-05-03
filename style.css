@@ -301,7 +301,7 @@ h3 {
 
 .contact-title {
   color: #9390ff;
-  font-size: 24px;
+  /* font-size: 24px; */
 }
 
 .contact-title.desktop {
@@ -323,8 +323,6 @@ h3 {
   grid-template-columns: 1fr;
   row-gap: 1rem;
   width: 100%;
-
-  /* height: 50px; */
 }
 
 .project-section {
@@ -349,11 +347,17 @@ h3 {
 h5 {
   color: #9390ff;
   font-family: Roboto, Arial, sans-serif;
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 24px;
+  font-size: 44px;
+  font-weight: 500;
+  line-height: 44px;
   letter-spacing: 0;
   text-align: center;
+  margin-bottom: 2px;
+  /* font-size: 44px;
+  line-height: 44px;
+  font-weight: 500;
+  letter-spacing: 0em;
+  text-align: center; */
 }
 
 .about-me {
@@ -383,9 +387,6 @@ h5 {
   border: none;
   background: #9390ff;
   color: white;
-
-  /* display: flex;
-  justify-content: center; */
   align-self: center;
 }
 
@@ -409,6 +410,15 @@ h5 {
 
 .second-footer a {
   color: white;
+}
+
+h6 {
+  font-weight: 300;
+  font-size: 24px;
+  margin-top: 20px;
+  line-height: 24px;
+  align-items: center;
+  letter-spacing: 0em;
 }
 
 .modal {
@@ -445,10 +455,6 @@ input {
   overflow-y: scroll;
   padding: 20px 20px;
 }
-
-/* placeholder {
-  color: black;
-} */
 
 @media only screen and (max-width: 770px) {
   .nav-bar {
