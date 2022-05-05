@@ -83,6 +83,20 @@ body {
   text-align: center;
   padding: 10px 15px;
   color: #b3bac5;
+  animation-name: slidein;
+  animation-duration: 5s;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 
 .first-line {
@@ -305,7 +319,7 @@ h3 {
   margin-top: auto;
   border: none;
   color: white;
-  transition: all 0.2s;
+  transition: all 0.5s;
 }
 
 .button-primary {
@@ -313,7 +327,7 @@ h3 {
 }
 
 .button:hover {
-  box-shadow: 0 8px 16px 0 #7d73fc7a;
+  box-shadow: 0 8px 16px 0 black;
 }
 
 .button:active {
