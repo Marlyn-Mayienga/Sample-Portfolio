@@ -43,6 +43,11 @@ main {
   width: 100%;
 }
 
+.nav-bar a {
+  color: white;
+  text-decoration: none;
+}
+
 body {
   background-color: #191765;
   color: white;
@@ -77,6 +82,7 @@ body {
   letter-spacing: 0;
   text-align: center;
   padding: 10px 15px;
+  color: #b3bac5;
 }
 
 .first-line {
@@ -104,13 +110,11 @@ body {
   text-align: center;
   color: white;
   padding-top: 20px;
+  text-decoration: none;
 }
 
 .content {
-  /* max-width: 1156px; */
   margin: 0 auto;
-
-  /* padding: 2rem; */
 }
 
 /**
@@ -137,6 +141,7 @@ body {
 .technologies-item ul {
   list-style: none;
   margin-top: 10px;
+  color: #b3bac5;
 }
 
 .social-links ul {
@@ -167,7 +172,11 @@ body {
 .social-links {
   display: flex;
   flex-direction: row;
-  margin: 20px 60px;
+  margin-left: 6%;
+  margin-right: 6%;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0;
 }
 
 .social-links a {
@@ -325,19 +334,7 @@ h3 {
 
 .contact-title {
   color: #9390ff;
-
-  /* font-size: 24px; */
 }
-
-/* .content {
-  background: url("/circle_header.svg") no-repeat;
-  background-position: 150% 150%;
-  background-size: 200px;
-} */
-
-/* .contact-title.desktop {
-  display: block;
-} */
 
 .contact-title.mobile {
   display: none;
@@ -367,6 +364,7 @@ h3 {
   line-height: 28px;
   letter-spacing: 0;
   text-align: left;
+  color: #b3bac5;
 }
 
 .skillset {
@@ -504,6 +502,10 @@ input {
 }
 
 @media only screen and (max-width: 770px) {
+  main {
+    padding: 10px;
+  }
+
   .nav-bar {
     display: none;
   }
@@ -525,6 +527,7 @@ input {
   }
 
   .page-break {
+    margin-top: 40px;
     flex-direction: column;
     align-items: center;
   }
