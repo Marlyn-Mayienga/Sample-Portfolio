@@ -84,6 +84,7 @@ body {
   padding: 10px 15px;
   color: #b3bac5;
   animation-name: slidein;
+  animation-duration: 5s;
 }
 
 @keyframes slidein {
