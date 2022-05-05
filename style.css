@@ -83,9 +83,6 @@ body {
   text-align: center;
   padding: 10px 15px;
   color: #b3bac5;
-}
-
-.first-paragraph {
   animation-name: slidein;
 }
 
@@ -100,7 +97,6 @@ body {
     width: 100%;
   }
 }
-
 
 .first-line {
   width: 448px;
