@@ -10,8 +10,6 @@
 - HTML, CSS
 
 
-
-
 ## Getting Started
 
 
@@ -39,10 +37,14 @@ Install the linters folder to your project.
 Install the fontawesome for icons in the project (Preferrable)
 
 
+
 ### Usage
 
 ### Run tests
 
+
+### Deployment
+The project  was deployed on Github pages and can be viewed on the following link: https://marlyn-mayienga.github.io/Marlyn_Mayienga/
 
 
 
