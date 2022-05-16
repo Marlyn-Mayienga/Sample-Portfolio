@@ -65,6 +65,7 @@ body {
   size: 10px;
 }
 
+
 .dev-tag {
   font-family: Roboto, Arial, sans-serif;
   font-size: 40px;
@@ -84,7 +85,6 @@ body {
   padding: 10px 15px;
   color: #b3bac5;
   animation-name: slidein;
-  animation-duration: 5s;
 }
 
 @keyframes slidein {
@@ -384,7 +384,7 @@ h3 {
 .skillset {
   display: flex;
   width: 100%;
-  margin: 0;
+  margin: 5px;
   padding: 0;
 }
 
@@ -495,6 +495,18 @@ h6 {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
+.mobile-img2{
+  display: none;
+}
+
+.mobile-img1{
+  display: none;
+}
+
+.fa-greater-than {
+  display: none;
+}
+
 input {
   overflow: visible;
   height: 50px;
@@ -518,16 +530,97 @@ input {
 @media only screen and (max-width: 770px) {
   main {
     padding: 10px;
+    width: 100%;
   }
 
-  .nav-bar {
+
+  .closeIcon {
     display: none;
+  }
+
+  .fa-envelope {
+    display: none;
+  }
+
+  .fa-greater-than {
+    display: block;
+  }
+
+  .sign {
+    margin-left: 480px;
+    color: #5e42d7;
+  }
+
+  .sign1 {
+    margin-left: 480px;
+    color: #5e42d7;
+    position: fixed;
+  }
+
+  .sign3 {
+    margin-left: 480px;
+    color: #5e42d7;
+  }
+
+  .mobile-img1 {
+    display: block;
+    height: 400px;
+    width: 400px;
+    top: 150px;
+    position: absolute;
+    left: -100px;
+  }
+
+  .mobile-img2 {
+    display: block;
+    height: 400px;
+    width: 400px;
+    bottom: 25px;
+    position: absolute;
+    right: -70px;
   }
 
   .hamburger-btn {
     color: white;
     display: block;
     font-size: 2em;
+    z-index: 100;
+  }
+
+  .menu {
+    position: fixed;
+    transform: translateY(-100%);
+    transition: transform 0.2s;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background: #191765;
+    color: white;
+    list-style: none;
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menuItem {
+    font-family: Roboto, Arial, sans-serif;
+    font-style: Medium;
+    font-size: 24px;
+    line-height: 32px;
+    line-height: 114%;
+    color: #edecff;
+    vertical-align: center;
+    margin-bottom: 1px;
+  }
+
+  .menuItem:hover {
+    text-decoration: underline;
+  }
+
+  .showMenu {
+    transform: translateY(0);
   }
 
   .content {
