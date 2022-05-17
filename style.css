@@ -1,7 +1,11 @@
+body{
+  scroll-behavior: smooth;
+}
+
 main {
   position: relative;
   overflow: hidden;
-  width: 100%;
+  /* width: 100%; */
   align-items: center;
 }
 
@@ -339,11 +343,12 @@ h3 {
 }
 
 .contact {
-  margin: 2rem auto;
+  /* margin: 2rem auto; */
   display: flex;
   align-items: center;
   flex-direction: column;
   width: 60%;
+  padding: 15px;
 }
 
 .contact-title {
@@ -529,7 +534,7 @@ input {
 
 @media only screen and (max-width: 770px) {
   main {
-    padding: 10px;
+    padding: 0px;
     width: 100%;
   }
 
@@ -546,6 +551,15 @@ input {
     display: block;
   }
 
+  .portfolio{
+    width: auto;
+    margin-bottom: 0px;
+  }
+
+  .nav-bar ul {
+    display: block;
+  }
+/* 
   .sign {
     margin-left: 480px;
     color: #5e42d7;
@@ -560,7 +574,7 @@ input {
   .sign3 {
     margin-left: 480px;
     color: #5e42d7;
-  }
+  } */
 
   .mobile-img1 {
     display: block;
@@ -585,6 +599,9 @@ input {
     display: block;
     font-size: 2em;
     z-index: 100;
+    position: fixed;
+    right: 20px;
+    top: 10px;
   }
 
   .menu {
@@ -599,26 +616,36 @@ input {
     background: #191765;
     color: white;
     list-style: none;
+    width: 100%;
+    padding: 10px 20px;
+    margin: 0;
     padding-top: 4rem;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
   }
 
   .menuItem {
     font-family: Roboto, Arial, sans-serif;
     font-style: Medium;
     font-size: 24px;
-    line-height: 32px;
-    line-height: 114%;
     color: #edecff;
-    vertical-align: center;
-    margin-bottom: 1px;
+    margin-bottom: 50px;
+    position: relative;
+    width: 100%;
+    display: block;
   }
 
-  .menuItem:hover {
-    text-decoration: underline;
-  }
-
+  /* .menuItem:hover {
+    text-decoration: underline !important;
+  } */
+.menuItem .fa-greater-than{
+  position: absolute;
+  right: 60px;
+  color: #5e42d7;
+  display: inline-block;
+  
+}
   .showMenu {
     transform: translateY(0);
   }
@@ -677,7 +704,7 @@ input {
   }
 
   .contact {
-    width: 100%;
+    width: 90%;
   }
 
   .contact-title.mobile {

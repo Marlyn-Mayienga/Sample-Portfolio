@@ -15,11 +15,11 @@ function toggleMenu() {
     menuIcon.style.display = "none";
   }
 }
-
+menu.addEventListener("click", toggleMenu);
 hamburger.addEventListener("click", toggleMenu);
 
-menuItems.forEach( 
-    function(menuItem) { 
-      menuItem.addEventListener("click", toggleMenu);
-    }
-  )
+// menuItems.forEach( 
+//     function(menuItem) { 
+//       menuItem.addEventListener("click", toggleMenu);
+//     }
+//   )
