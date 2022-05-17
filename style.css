@@ -1,10 +1,7 @@
-body{
-  scroll-behavior: smooth;
-}
-
 main {
   position: relative;
   overflow: hidden;
+
   /* width: 100%; */
   align-items: center;
 }
@@ -53,6 +50,7 @@ main {
 }
 
 body {
+  scroll-behavior: smooth;
   background-color: #191765;
   color: white;
   font-family: Roboto, Arial, sans-serif;
@@ -68,7 +66,6 @@ body {
   color: #9390ff;
   size: 10px;
 }
-
 
 .dev-tag {
   font-family: Roboto, Arial, sans-serif;
@@ -500,11 +497,11 @@ h6 {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-.mobile-img2{
+.mobile-img2 {
   display: none;
 }
 
-.mobile-img1{
+.mobile-img1 {
   display: none;
 }
 
@@ -534,10 +531,9 @@ input {
 
 @media only screen and (max-width: 770px) {
   main {
-    padding: 0px;
+    padding: 0;
     width: 100%;
   }
-
 
   .closeIcon {
     display: none;
@@ -551,36 +547,20 @@ input {
     display: block;
   }
 
-  .portfolio{
+  .portfolio {
     width: auto;
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
   .nav-bar ul {
     display: block;
   }
-/* 
-  .sign {
-    margin-left: 480px;
-    color: #5e42d7;
-  }
-
-  .sign1 {
-    margin-left: 480px;
-    color: #5e42d7;
-    position: fixed;
-  }
-
-  .sign3 {
-    margin-left: 480px;
-    color: #5e42d7;
-  } */
 
   .mobile-img1 {
     display: block;
     height: 400px;
     width: 400px;
-    top: 150px;
+    top: -80px;
     position: absolute;
     left: -100px;
   }
@@ -589,7 +569,7 @@ input {
     display: block;
     height: 400px;
     width: 400px;
-    bottom: 25px;
+    bottom: -435px;
     position: absolute;
     right: -70px;
   }
@@ -627,7 +607,7 @@ input {
 
   .menuItem {
     font-family: Roboto, Arial, sans-serif;
-    font-style: Medium;
+    font-style: medium;
     font-size: 24px;
     color: #edecff;
     margin-bottom: 50px;
@@ -636,16 +616,13 @@ input {
     display: block;
   }
 
-  /* .menuItem:hover {
-    text-decoration: underline !important;
-  } */
-.menuItem .fa-greater-than{
-  position: absolute;
-  right: 60px;
-  color: #5e42d7;
-  display: inline-block;
-  
-}
+  .menuItem .fa-greater-than {
+    position: absolute;
+    right: 60px;
+    color: #5e42d7;
+    display: inline-block;
+  }
+
   .showMenu {
     transform: translateY(0);
   }
