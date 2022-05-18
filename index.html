@@ -43,28 +43,31 @@
                   >About
                   <i class="fas fa-chevron-right"></i>
                   <img
-                class="mobile-img1" src="./mobile_menu2.svg" alt="circle 2 header"
-              />
+                    class="mobile-img1"
+                    src="./mobile_menu2.svg"
+                    alt="circle 2 header"
+                  />
                 </a>
               </li>
               <li>
                 <a class="menuItem" href="#contact"
                   >Contact
                   <i class="fas fa-chevron-right"></i>
-              <img class="mobile-img2" src="./mobile_menu.svg" alt="circle 2 header"
-              />
+                  <img
+                    class="mobile-img2"
+                    src="./mobile_menu.svg"
+                    alt="circle 2 header"
+                  />
                 </a>
               </li>
               <li>
-                <a class="menuItem" href="#"
-                  ><i class="fas fa-envelope"></i
-                ></a>
+                <a class="menuItem" href="#"><i class="fas fa-envelope"></i></a>
               </li>
             </ul>
           </nav>
           <div class="hamburger-btn">
             <i class="menuIcon fas fa-bars"></i>
-            <i class=" closeIcon fas fa-times"></i>
+            <i class="closeIcon fas fa-times"></i>
           </div>
         </div>
       </header>
@@ -196,10 +199,7 @@
                     <li>Ruby</li>
                   </ul>
                   <div class="work-item-actions">
-                    <button
-                      class="button button-primary"
-                      onclick="document.getElementById('id1').style.display='block'"
-                    >
+                    <button class="open-modal button button-primary">
                       See Project
                     </button>
                   </div>
@@ -230,7 +230,9 @@
                     <li>Ruby</li>
                   </ul>
                   <div class="work-item-actions">
-                    <button class="button button-primary">See Project</button>
+                    <button class="open-modal button button-primary">
+                      See Project
+                    </button>
                   </div>
                 </div>
               </div>
@@ -258,7 +260,9 @@
                     <li>Ruby</li>
                   </ul>
                   <div class="work-item-actions">
-                    <button class="button button-primary">See Project</button>
+                    <button class="open-modal button button-primary">
+                      See Project
+                    </button>
                   </div>
                 </div>
               </div>
@@ -286,7 +290,9 @@
                     <li>Ruby</li>
                   </ul>
                   <div class="work-item-actions">
-                    <button class="button button-primary">See Project</button>
+                    <button class="open-modal button button-primary">
+                      See Project
+                    </button>
                   </div>
                 </div>
               </div>
@@ -389,49 +395,46 @@
           </div>
         </footer>
       </section>
-
-      <div id="id1" class="modal">
-        <div class="modal-content">
-          <span
-            onclick="document.getElementById('id1').style.display='none'"
-            class="button"
-            >&times;</span
-          >
-          <div class="modal-container">
-            <img class="work-img" src="./project.jpg" alt="project image" />
-            <div class="work-content">
-              <h4 class="work-item-title">Multi-Post Stories</h4>
-              <p class="project-section">
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required. has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a
-                standard dummy text.
-              </p>
-              <ul class="skillset">
-                <li>css</li>
-                <li>html</li>
-                <li>bootstrap</li>
-                <li>Ruby</li>
-              </ul>
-              <div class="work-item-actions">
-                <button class="button button-primary">
-                  See Live <span><i class="fas fa-location-arrow"></i></span>
-                </button>
-                <button class="button button-primary">
-                  See Source <span><i class="fab fa-github"></i></span>
-                </button>
-              </div>
+    </main>
+    <div id="id1" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="work-item-title">Multi-Post Stories</h4>
+          <span class="btn-close">&times;</span>
+        </div>
+        <div class="modal-container">
+          <img class="work-img" src="./project.jpg" alt="project image" />
+          <div class="work-content">
+            <p class="project-section">
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required. has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a standard
+              dummy text.
+            </p>
+            <ul class="skillset">
+              <li>css</li>
+              <li>html</li>
+              <li>bootstrap</li>
+              <li>Ruby</li>
+            </ul>
+            <div class="work-item-actions">
+              <button class="button button-primary">
+                See Live <span><i class="fas fa-location-arrow"></i></span>
+              </button>
+              <button class="button button-primary">
+                See Source <span><i class="fab fa-github"></i></span>
+              </button>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <script
-        src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-        crossorigin="anonymous"
-      ></script>
-      <script src="./scripts.js"></script>
-    </main>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./scripts.js"></script>
   </body>
 </html>

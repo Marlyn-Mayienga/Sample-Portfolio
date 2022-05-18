@@ -18,79 +18,31 @@ function toggleMenu() {
 menu.addEventListener("click", toggleMenu);
 hamburger.addEventListener("click", toggleMenu);
 
-const body = document.createElement("body");
-const section = document.createElement("work-item");
-body.appendChild(work - item);
-section.innerHTML = `
-<div class="modal-container">
-<img class="work-img" src="./project.jpg" alt="project image" />
-<div class="work-content">
-  <h4 class="work-item-title">Multi-Post Stories</h4>
-  <p class="project-section">
-    A daily selection of privately personalized reads; no accounts
-    or sign-ups required. has been the industry's standard dummy
-    text ever since the 1500s, when an unknown printer took a
-    standard dummy text.
-  </p>
-  <ul class="skillset">
-    <li>css</li>
-    <li>html</li>
-    <li>bootstrap</li>
-    <li>Ruby</li>
-  </ul>
-  <div class="work-item-actions">
-    <button class="button button-primary">
-      See Live <span><i class="fas fa-location-arrow"></i></span>
-    </button>
-    <button class="button button-primary">
-      See Source <span><i class="fab fa-github"></i></span>
-    </button>
-  </div>
-</div>
-</div>
-`;
-
-const open = document.queryselector(".See-project");
-open.addEventListener("click", () => {
-  const main = document.createElement("div");
-  main.className = 'main';
-  const popup = document.createElement("div");
-  popup.className = 'popup';
-  popup.innerHTML = `
-      <div class="modal-container">
-<img class="work-img" src="./project.jpg" alt="project image" />
-<div class="work-content">
-  <h4 class="work-item-title">Multi-Post Stories</h4>
-  <p class="project-section">
-    A daily selection of privately personalized reads; no accounts
-    or sign-ups required. has been the industry's standard dummy
-    text ever since the 1500s, when an unknown printer took a
-    standard dummy text.
-  </p>
-  <ul class="skillset">
-    <li>css</li>
-    <li>html</li>
-    <li>bootstrap</li>
-    <li>Ruby</li>
-  </ul>
-  <div class="work-item-actions">
-    <button class="button button-primary">
-      See Live <span><i class="fas fa-location-arrow"></i></span>
-    </button>
-    <button class="button button-primary">
-      See Source <span><i class="fab fa-github"></i></span>
-    </button>
-  </div>
-</div>
-</div>
-      `;
+/**
+ Modal
+ */
 
 
-      main.appendChild(popup);
-      body.appendChild(main);
+ const openModal = document.querySelectorAll(".open-modal");
+ const closeModal = document.querySelector(".btn-close");
 
-      const close = document.querySelector('');
-      close.addEventListener('click', ()=>{
-        body.removeChild(main);
-      })
-})
+ function toggleModal () {
+  if (openModal){
+    document.getElementById('id1').style.display='block';
+  } else{
+    document.getElementById('id1').style.display='none';
+  }
+  
+ }
+
+ openModal.forEach( 
+  function(button) { 
+    button.addEventListener("click", toggleModal);
+  }
+)
+
+closeModal.addEventListener("click", hideModal);
+function hideModal (){
+  document.getElementById('id1').style.display='none';
+}
+
