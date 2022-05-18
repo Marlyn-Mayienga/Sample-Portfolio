@@ -570,13 +570,16 @@ input {
   overflow: visible;
   height: 50px;
 }
-.hidden{
+
+.hidden {
   display: none;
 }
-.show{
+
+.show {
   display: block !important;
 }
-.error{
+
+.error {
   display: none;
   width: 100%;
   background: #f00;
@@ -758,17 +761,17 @@ input {
 
   .contact {
     width: 90%;
-
   }
 
   .contact-title.mobile {
     display: block;
   }
 
-  .contact-title.desktop{
+  .contact-title.desktop {
     display: none;
   }
-  contact.description {
+
+  .contact-description {
     font-weight: 300;
     font-size: 24px;
     margin-top: 20px;
@@ -777,7 +780,7 @@ input {
     letter-spacing: 0;
     margin-left: 50%;
   }
-  
+
 
   /* .contact-form {
     display: flex;
@@ -842,13 +845,15 @@ input {
     margin: 10px auto;
   }
 
-  .hidden{
+  .hidden {
     display: none;
   }
-  .show{
+
+  .show {
     display: block !important;
   }
-  .error{
+
+  .error {
     display: none;
     width: 100%;
     background: #f00;
