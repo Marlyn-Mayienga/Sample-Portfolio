@@ -540,6 +540,7 @@ input {
     width: 12px;
     height: 12px;
     size: 30;
+
     /* font-weight: 400; */
     margin: 15px;
     margin-bottom: 50px;
@@ -549,7 +550,7 @@ input {
     display: none;
   }
 
-  .fa-chevron-right{
+  .fa-chevron-right {
     display: block;
     size: 2em;
     width: 2px;
