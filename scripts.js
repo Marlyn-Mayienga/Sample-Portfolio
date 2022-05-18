@@ -46,3 +46,29 @@ function hideModal (){
   document.getElementById('id1').style.display='none';
 }
 
+/**
+ Validate form
+ */
+
+ function isUppercase (text){
+   return !/[a-z]/.test(text) && /[A-Z]/.test(text);
+ }
+ 
+function validateEmail(email){
+  var re = /^[a-z_A-Z\-0-9\.\*\#\$\!\~\%\^\&\-\+\?\|]+@+[a-zA-Z\-0-9]+(.com)$/;  
+  return re.test(email);
+}
+
+function handleSubmitContactForm(event){
+  var email = document.getElementById("email").value;
+  const error = document.querySelector(".error");
+  if(isUppercase(email)){
+    error.classList.add("show");
+    event.preventDefault();
+  } else{
+    error.classList.remove("show");
+  }
+}
+
+var form = document.getElementById("contact-form");
+form.addEventListener("submit", handleSubmitContactForm);
