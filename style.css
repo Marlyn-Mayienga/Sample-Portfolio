@@ -472,6 +472,7 @@ h5 {
 .contact-title.desktop {
   display: block;
   font-size: 40px;
+  margin-left: 300px;
 }
 
 h6 {
@@ -590,6 +591,14 @@ input {
   main {
     padding: 0;
     width: 100%;
+  }
+
+  h6 {
+    margin-left: 10%;
+  }
+
+  .contact-form {
+    margin-left: 4%;
   }
 
   .closeIcon {
