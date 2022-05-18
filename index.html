@@ -31,17 +31,40 @@
         <div class="container-nav">
           <a href="index.html" class="logo-title">Marlyn Mayienga</a>
           <nav class="nav-bar">
-            <ul>
-              <li><a href="Portfolio">Portfolio</a></li>
-              <li><a href="About">About</a></li>
-              <li><a href="Contact">Contact</a></li>
+            <ul class="menu">
+              <li class="portfolio">
+                <a class="menuItem" href="#portfolio"
+                  >Portfolio
+                  <i class="fas fa-chevron-right"></i>
+                </a>
+              </li>
               <li>
-                <a href="#"><i class="far fa-envelope"></i></a>
+                <a class="menuItem" href="#"
+                  >About
+                  <i class="fas fa-chevron-right"></i>
+                  <img
+                class="mobile-img1" src="./mobile_menu2.svg" alt="circle 2 header"
+              />
+                </a>
+              </li>
+              <li>
+                <a class="menuItem" href="#contact"
+                  >Contact
+                  <i class="fas fa-chevron-right"></i>
+              <img class="mobile-img2" src="./mobile_menu.svg" alt="circle 2 header"
+              />
+                </a>
+              </li>
+              <li>
+                <a class="menuItem" href="#"
+                  ><i class="fas fa-envelope"></i
+                ></a>
               </li>
             </ul>
           </nav>
           <div class="hamburger-btn">
-            <i class="fas fa-bars"></i>
+            <i class="menuIcon fas fa-bars"></i>
+            <i class=" closeIcon fas fa-times"></i>
           </div>
         </div>
       </header>
@@ -142,7 +165,7 @@
           </div>
         </section>
 
-        <section class="my-recent-work">
+        <section class="my-recent-work" id="portfolio">
           <div class="container">
             <h3>My Recent Work</h3>
             <hr class="second-line" />
@@ -271,7 +294,7 @@
           </div>
           <div class="divider-full"></div>
         </section>
-        <section class="contact">
+        <section class="contact" id="contact">
           <p class="contact-title desktop">Let's chat!</p>
           <h5 class="contact-title mobile">CONTACT US</h5>
           <h6 class="contact-description">
@@ -408,6 +431,7 @@
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
         crossorigin="anonymous"
       ></script>
+      <script src="./scripts.js"></script>
     </main>
   </body>
 </html>

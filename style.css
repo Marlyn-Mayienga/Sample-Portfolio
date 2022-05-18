@@ -1,7 +1,8 @@
 main {
   position: relative;
   overflow: hidden;
-  width: 100%;
+
+  /* width: 100%; */
   align-items: center;
 }
 
@@ -49,6 +50,7 @@ main {
 }
 
 body {
+  scroll-behavior: smooth;
   background-color: #191765;
   color: white;
   font-family: Roboto, Arial, sans-serif;
@@ -84,7 +86,6 @@ body {
   padding: 10px 15px;
   color: #b3bac5;
   animation-name: slidein;
-  animation-duration: 5s;
 }
 
 @keyframes slidein {
@@ -339,11 +340,12 @@ h3 {
 }
 
 .contact {
-  margin: 2rem auto;
+  /* margin: 2rem auto; */
   display: flex;
   align-items: center;
   flex-direction: column;
   width: 60%;
+  padding: 15px;
 }
 
 .contact-title {
@@ -384,7 +386,7 @@ h3 {
 .skillset {
   display: flex;
   width: 100%;
-  margin: 0;
+  margin: 5px;
   padding: 0;
 }
 
@@ -495,6 +497,18 @@ h6 {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
+.mobile-img2 {
+  display: none;
+}
+
+.mobile-img1 {
+  display: none;
+}
+
+.fa-chevron-right {
+  display: none;
+}
+
 input {
   overflow: visible;
   height: 50px;
@@ -517,17 +531,110 @@ input {
 
 @media only screen and (max-width: 770px) {
   main {
-    padding: 10px;
+    padding: 0;
+    width: 100%;
   }
 
-  .nav-bar {
+  .closeIcon {
     display: none;
+    width: 12px;
+    height: 12px;
+    size: 30;
+
+    /* font-weight: 400; */
+    margin: 15px;
+    margin-bottom: 50px;
+  }
+
+  .fa-envelope {
+    display: none;
+  }
+
+  .fa-chevron-right {
+    display: block;
+    size: 2em;
+    width: 2px;
+    font-weight: 700;
+  }
+
+  .portfolio {
+    width: auto;
+    margin-bottom: 0;
+  }
+
+  .nav-bar ul {
+    display: block;
+  }
+
+  .mobile-img1 {
+    display: block;
+    height: 400px;
+    width: 400px;
+    top: -80px;
+    position: absolute;
+    left: -100px;
+  }
+
+  .mobile-img2 {
+    display: block;
+    height: 400px;
+    width: 400px;
+    bottom: -435px;
+    position: absolute;
+    right: -70px;
   }
 
   .hamburger-btn {
     color: white;
     display: block;
     font-size: 2em;
+    z-index: 100;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+  }
+
+  .menu {
+    position: fixed;
+    transform: translateY(-100%);
+    transition: transform 0.2s;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background: #191765;
+    color: white;
+    list-style: none;
+    width: 100%;
+    padding: 30px 20px;
+    margin: 0;
+    padding-top: 120px;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+  }
+
+  .menuItem {
+    font-family: Roboto, Arial, sans-serif;
+    font-style: medium;
+    font-size: 24px;
+    color: #edecff;
+    margin-bottom: 50px;
+    position: relative;
+    width: 100%;
+    display: block;
+  }
+
+  .menuItem .fa-chevron-right {
+    position: absolute;
+    right: 60px;
+    color: #5e42d7;
+    display: inline-block;
+  }
+
+  .showMenu {
+    transform: translateY(0);
   }
 
   .content {
@@ -584,7 +691,7 @@ input {
   }
 
   .contact {
-    width: 100%;
+    width: 90%;
   }
 
   .contact-title.mobile {
