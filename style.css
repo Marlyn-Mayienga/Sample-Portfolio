@@ -505,7 +505,7 @@ h6 {
   display: none;
 }
 
-.fa-greater-than {
+.fa-chevron-right {
   display: none;
 }
 
@@ -537,14 +537,23 @@ input {
 
   .closeIcon {
     display: none;
+    width: 12px;
+    height: 12px;
+    size: 30;
+    /* font-weight: 400; */
+    margin: 15px;
+    margin-bottom: 50px;
   }
 
   .fa-envelope {
     display: none;
   }
 
-  .fa-greater-than {
+  .fa-chevron-right{
     display: block;
+    size: 2em;
+    width: 2px;
+    font-weight: 700;
   }
 
   .portfolio {
@@ -581,7 +590,7 @@ input {
     z-index: 100;
     position: fixed;
     right: 20px;
-    top: 10px;
+    top: 20px;
   }
 
   .menu {
@@ -597,9 +606,9 @@ input {
     color: white;
     list-style: none;
     width: 100%;
-    padding: 10px 20px;
+    padding: 30px 20px;
     margin: 0;
-    padding-top: 4rem;
+    padding-top: 120px;
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
@@ -616,7 +625,7 @@ input {
     display: block;
   }
 
-  .menuItem .fa-greater-than {
+  .menuItem .fa-chevron-right {
     position: absolute;
     right: 60px;
     color: #5e42d7;
