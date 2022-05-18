@@ -41,4 +41,8 @@ hamburger.addEventListener("click", toggleMenu);
   }
 )
 
+closeModal.addEventListener("click", hideModal);
+function hideModal (){
+  document.getElementById('id1').style.display='none';
+}
 
