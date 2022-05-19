@@ -46,11 +46,6 @@ function hideModal() {
  Validate form
  */
 
-// document.getElementById("contact-form").addEventListener("submit", (event) => {
-//   const email = document.getElementById("email").value;
-//   formSubmit();
-// });
-
 /**
  Variables to store form elements
  */
@@ -72,11 +67,8 @@ function formSubmit(event) {
     });
     window.localStorage.setItem("userData", userData);
     document.getElementById("contact-form").reset();
-    // userName.value = '';
-    // email.value = '';
-    // message.value = '';
   }
-}
+}                                                                      
 window.onload = function () {
   readLocalStorage();
 };
