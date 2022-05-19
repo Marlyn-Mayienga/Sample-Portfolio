@@ -1,8 +1,6 @@
 main {
   position: relative;
   overflow: hidden;
-
-  /* width: 100%; */
   align-items: center;
 }
 
@@ -340,7 +338,6 @@ h3 {
 }
 
 .contact {
-  /* margin: 2rem auto; */
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -372,6 +369,7 @@ h3 {
   grid-template-columns: 1fr;
   row-gap: 1rem;
   width: 100%;
+  margin-left: 50%;
 }
 
 .project-section {
@@ -414,15 +412,8 @@ h5 {
   text-align: center;
 }
 
-#names {
-  display: grid; /* 2. display flex to the rescue */
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 1rem;
-  width: 100%;
-}
-
 #fullname {
-  display: none;
+  display: block;
 }
 
 .send-button {
@@ -471,6 +462,7 @@ h5 {
 .contact-title.desktop {
   display: block;
   font-size: 40px;
+  margin-left: 300px;
 }
 
 h6 {
@@ -480,6 +472,8 @@ h6 {
   line-height: 24px;
   align-items: center;
   letter-spacing: 0;
+  margin-left: 50%;
+  width: 100%;
 }
 
 .modal {
@@ -567,10 +561,37 @@ input {
   height: 50px;
 }
 
+.hidden {
+  display: none;
+}
+
+.show {
+  display: block !important;
+}
+
+.error {
+  display: none;
+  width: 100%;
+  background: #f00;
+  color: #fff;
+  border-radius: 4px;
+  padding: 1rem;
+  text-align: center;
+  font-weight: 600;
+}
+
 @media only screen and (max-width: 770px) {
   main {
     padding: 0;
     width: 100%;
+  }
+
+  h6 {
+    margin-left: 10%;
+  }
+
+  .contact-form {
+    margin-left: 4%;
   }
 
   .closeIcon {
@@ -578,8 +599,6 @@ input {
     width: 12px;
     height: 12px;
     size: 30;
-
-    /* font-weight: 400; */
     margin: 15px;
     margin-bottom: 50px;
   }
@@ -736,9 +755,18 @@ input {
     display: block;
   }
 
-  #names {
-    flex-direction: column;
+  .contact-title.desktop {
     display: none;
+  }
+
+  .contact-description {
+    font-weight: 300;
+    font-size: 24px;
+    margin-top: 20px;
+    line-height: 24px;
+    align-items: center;
+    letter-spacing: 0;
+    margin-left: 50%;
   }
 
   #fullname {
@@ -788,5 +816,24 @@ input {
 
   .modal-content .work-content .work-item-actions .button-primary {
     margin: 10px auto;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .show {
+    display: block !important;
+  }
+
+  .error {
+    display: none;
+    width: 100%;
+    background: #f00;
+    color: #fff;
+    border-radius: 4px;
+    padding: 1rem;
+    text-align: center;
+    font-weight: 600;
   }
 }

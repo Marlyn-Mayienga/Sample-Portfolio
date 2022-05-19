@@ -310,6 +310,7 @@
           </h6>
           <form
             class="contact-form"
+            id="contact-form"
             action="https://formspree.io/f/xvolvllr"
             method="POST"
           >
@@ -321,24 +322,6 @@
               maxlength="30"
               required
             />
-            <div id="names">
-              <input
-                type="text"
-                id="fname"
-                name="firstname"
-                placeholder="Enter First Name"
-                maxlength="30"
-                required
-              />
-              <input
-                type="text"
-                id="lname"
-                name="lastname"
-                placeholder="Last Name"
-                maxlength="30"
-                required
-              />
-            </div>
             <input
               type="email"
               id="email"
@@ -359,6 +342,7 @@
             ></textarea>
 
             <button type="submit" class="send-button">Send</button>
+            <div class="error" id="error">Email should be in lowercase</div>
           </form>
         </section>
         <div class="divider-full"></div>

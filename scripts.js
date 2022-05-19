@@ -46,3 +46,17 @@ function hideModal (){
   document.getElementById('id1').style.display='none';
 }
 
+/**
+ Validate form
+ */
+
+
+document.getElementById("contact-form").addEventListener('submit',
+(event) =>{
+
+  const email = document.getElementById("email").value;
+  if (email !== email.toLowerCase()){
+    event.preventDefault();
+    document.getElementById("error").classList.add('show');
+  }
+});
