@@ -49,12 +49,8 @@ function hideModal() {
 /**
  Variables to store form elements
  */
-const submitButton = document.getElementById("email");
+const submitButton = document.getElementById("msg");
 submitButton.addEventListener("change", formSubmit);
-
-// const savedForm = document.getElementById("contact-form");
-// savedForm.addEventListener("change", formSubmit);
-// savedForm.addEventListener("click", formSubmit);
 
 function formSubmit(event) {
   const userName = document.getElementById("fullname").value;
@@ -70,7 +66,6 @@ function formSubmit(event) {
       message: message,
     });
     window.localStorage.setItem("userData", userData);
-    document.getElementById("contact-form").reset();
   }
 }
 window.onload = function () {
