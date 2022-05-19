@@ -22,41 +22,71 @@ hamburger.addEventListener("click", toggleMenu);
  Modal
  */
 
+const openModal = document.querySelectorAll(".open-modal");
+const closeModal = document.querySelector(".btn-close");
 
- const openModal = document.querySelectorAll(".open-modal");
- const closeModal = document.querySelector(".btn-close");
-
- function toggleModal () {
-  if (openModal){
-    document.getElementById('id1').style.display='block';
-  } else{
-    document.getElementById('id1').style.display='none';
+function toggleModal() {
+  if (openModal) {
+    document.getElementById("id1").style.display = "block";
+  } else {
+    document.getElementById("id1").style.display = "none";
   }
-  
- }
+}
 
- openModal.forEach( 
-  function(button) { 
-    button.addEventListener("click", toggleModal);
-  }
-)
+openModal.forEach(function (button) {
+  button.addEventListener("click", toggleModal);
+});
 
 closeModal.addEventListener("click", hideModal);
-function hideModal (){
-  document.getElementById('id1').style.display='none';
+function hideModal() {
+  document.getElementById("id1").style.display = "none";
 }
 
 /**
  Validate form
  */
 
+// document.getElementById("contact-form").addEventListener("submit", (event) => {
+//   const email = document.getElementById("email").value;
+//   formSubmit();
+// });
 
-document.getElementById("contact-form").addEventListener('submit',
-(event) =>{
+/**
+ Variables to store form elements
+ */
+const submitButton = document.getElementById("send-button");
+submitButton.addEventListener("click", formSubmit);
 
+function formSubmit(event) {
+  const userName = document.getElementById("fullname").value;
   const email = document.getElementById("email").value;
-  if (email !== email.toLowerCase()){
-    event.preventDefault();
-    document.getElementById("error").classList.add('show');
+  const message = document.getElementById("msg").value;
+  event.preventDefault();
+  if (email !== email.toLowerCase()) {
+    document.getElementById("error").classList.add("show");
+  } else {
+    const userData = JSON.stringify({
+      userName: userName,
+      email: email,
+      message: message,
+    });
+    window.localStorage.setItem("userData", userData);
+    document.getElementById("contact-form").reset();
+    // userName.value = '';
+    // email.value = '';
+    // message.value = '';
   }
-});
+}
+window.onload = function () {
+  readLocalStorage();
+};
+/**Binding */
+
+function readLocalStorage() {
+  if (window.localStorage.getItem("userData")) {
+    const userData = JSON.parse(window.localStorage.getItem("userData"));
+    document.getElementById("fullname").value = userData.userName;
+    document.getElementById("email").value = userData.email;
+    document.getElementById("msg").value = userData.message;
+  }
+}
